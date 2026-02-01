@@ -1,43 +1,38 @@
-// Cart array
+console.log("ShopNgo JS loaded");
+
 let cartItems = [];
 
-// Add item to cart
 function addToCart(item) {
+  alert(item + " added to cart");
   cartItems.push(item);
-  updateCart();
+  renderCart();
 }
 
-// Update cart UI
-function updateCart() {
-  const cartList = document.getElementById("cart");
-  cartList.innerHTML = "";
+function renderCart() {
+  const cart = document.getElementById("cart");
+  if (!cart) return;
 
-  if (cartItems.length === 0) {
-    cartList.innerHTML = "<li>Cart is empty</li>";
-    return;
-  }
-
-  cartItems.forEach((item, index) => {
+  cart.innerHTML = "";
+  cartItems.forEach(item => {
     const li = document.createElement("li");
-    li.textContent = item;
-    cartList.appendChild(li);
+    li.innerText = item;
+    cart.appendChild(li);
   });
 }
 
-// Checkout (demo)
 function checkout() {
   if (cartItems.length === 0) {
-    alert("Your cart is empty!");
+    alert("Cart is empty");
     return;
   }
 
   alert(
-    "🙏 Thank you for choosing us!\n\n" +
+    "Thank you for choosing us.\n\n" +
     "This website is for demo purposes only.\n" +
     "We will notify you when we go live."
   );
 
   document.getElementById("feedbackSection").style.display = "block";
   cartItems = [];
-  updateCart();
+  renderCart();
 }
