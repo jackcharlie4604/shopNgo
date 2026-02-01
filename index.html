@@ -45,23 +45,36 @@
 <section>
   <h2>🛒 Products</h2>
   <div class="grid">
-    <div class="card">📱 Smartphone ₹15,999<br><button onclick="addToCart('Smartphone')">Buy</button></div>
-    <div class="card">💻 Laptop ₹55,000<br><button onclick="addToCart('Laptop')">Buy</button></div>
-    <div class="card">🎧 Headphones ₹2,499<br><button onclick="addToCart('Headphones')">Buy</button></div>
-    <div class="card">👕 Clothing ₹999<br><button onclick="addToCart('Clothing')">Buy</button></div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+      <h3>Smartphone</h3>
+      <p class="offer">🔥 99% OFF</p>
+      <button onclick="addToCart('Smartphone')">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+      <h3>Laptop</h3>
+      <p class="offer">🔥 99% OFF</p>
+      <button onclick="addToCart('Laptop')">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155223168f">
+      <h3>Headphones</h3>
+      <p class="offer">🔥 99% OFF</p>
+      <button onclick="addToCart('Headphones')">Buy</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47">
+      <h3>Clothing</h3>
+      <p class="offer">🔥 99% OFF</p>
+      <button onclick="addToCart('Clothing')">Buy</button>
+    </div>
+
   </div>
-</section>
-
-<section>
-  <h2>🧺 Cart</h2>
-  <ul id="cart"></ul>
-  <button onclick="checkout()">Proceed to Payment</button>
-</section>
-
-<section id="feedbackSection" style="display:none">
-  <h2>💬 Feedback</h2>
-  <textarea placeholder="Please write your feedback here..."></textarea><br><br>
-  <button onclick="alert('Thank you for your feedback!')">Submit Feedback</button>
 </section>
 
 </main>
