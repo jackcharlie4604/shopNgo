@@ -1,4 +1,3 @@
-/* ========== GLOBAL ========== */
 * {
   box-sizing: border-box;
 }
@@ -10,7 +9,6 @@ body {
   color: #333;
 }
 
-/* ========== HEADER ========== */
 .header {
   background: linear-gradient(90deg, #ff4da6, #ff80bf);
   padding: 15px 20px;
@@ -30,16 +28,12 @@ body {
   color: #fff0f5;
 }
 
-.header select,
-.header input,
-.header button {
-  padding: 8px 10px;
+input, select, button, textarea {
+  padding: 8px;
   border-radius: 6px;
   border: none;
-  outline: none;
 }
 
-/* ========== MAIN LAYOUT ========== */
 main {
   padding: 20px;
 }
@@ -51,7 +45,6 @@ main {
   border-radius: 12px;
 }
 
-/* ========== GRID & CARDS ========== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -68,25 +61,19 @@ main {
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* ========== BUTTONS ========== */
 button {
   background: #ff4da6;
   color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
   cursor: pointer;
-  font-weight: 500;
 }
 
 button:hover {
   background: #e60073;
 }
 
-/* ========== CART ========== */
 .cart-box {
   background: #fff0f5;
   border: 2px dashed #ff99cc;
@@ -104,23 +91,30 @@ button:hover {
 
 #total {
   font-weight: bold;
-  margin-top: 10px;
 }
 
-/* ========== FEEDBACK ========== */
-textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ffb3d9;
-  resize: vertical;
+.price {
+  color: #e60073;
+  font-weight: bold;
 }
 
-/* ========== FOOTER ========== */
+.badge {
+  background: #ff0066;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+del {
+  color: #999;
+}
+
 footer {
   background: #333;
   color: white;
   text-align: center;
   padding: 12px;
-  font-size: 14px;
 }
