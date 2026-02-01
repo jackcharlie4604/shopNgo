@@ -1,9 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ShopNgo Live</title>
+  <meta charset="UTF-8">
+  <title>ShopNgo – Shop & Food</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🎉 ShopNgo is Live!</h1>
+
+<header>
+  <h1>ShopNgo</h1>
+
+  <select id="city" onchange="loadFood()">
+    <option value="">📍 Select Location</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Bangalore">Bangalore</option>
+  </select>
+
+  <button onclick="getLocation()">Use My Location</button>
+
+  <input type="text" placeholder="Search food or products">
+</header>
+
+<main>
+  <section>
+    <h2>🍽️ Popular Food Near You</h2>
+    <div id="foodList" class="grid">
+      <p>Select a location to see food</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🛒 Popular Products</h2>
+    <div class="grid">
+      <div class="card">📱 Smartphone<br><span>₹15,999</span></div>
+      <div class="card">💻 Laptop<br><span>₹55,000</span></div>
+      <div class="card">👕 Clothing<br><span>₹999</span></div>
+      <div class="card">🎧 Headphones<br><span>₹2,499</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 ShopNgo | Shop + Food Together</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
