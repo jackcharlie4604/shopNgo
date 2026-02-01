@@ -5,10 +5,10 @@ const prices = {
   Burger: 199,
   Biryani: 349,
   Salad: 249,
-  Smartphone: 15999,
-  Laptop: 55000,
-  Headphones: 2499,
-  Clothing: 999
+  Smartphone: 1599,
+  Laptop: 5500,
+  Headphones: 249,
+  Clothing: 99
 };
 
 function addToCart(item) {
