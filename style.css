@@ -1,37 +1,38 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #ffe6f0;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background: #fbe7f3;
+}
+
+.top-note {
+  background: #0047ff;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .header {
-  background: linear-gradient(90deg, #ff4da6, #ff80bf);
-  padding: 15px 20px;
+  background: linear-gradient(90deg,#0066ff,#ff4da6);
+  padding: 15px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 22px;
   color: white;
-  margin-right: auto;
+  font-weight: bold;
 }
 
-.logo span {
-  color: #fff0f5;
-}
-
-input, select, button, textarea {
-  padding: 8px;
-  border-radius: 6px;
+.switch button {
+  background: white;
   border: none;
+  padding: 8px 14px;
+  margin-left: 5px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 main {
@@ -40,81 +41,52 @@ main {
 
 .box {
   background: white;
-  padding: 16px;
-  margin-bottom: 20px;
+  padding: 20px;
   border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
   gap: 15px;
 }
 
 .card {
-  background: #fff0f5;
-  padding: 14px;
+  background: #fff0f7;
+  padding: 15px;
   border-radius: 12px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 button {
+  margin-top: 8px;
   background: #ff4da6;
   color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #e60073;
-}
-
-.cart-box {
-  background: #fff0f5;
-  border: 2px dashed #ff99cc;
-}
-
-#cart {
-  list-style: none;
-  padding-left: 0;
-}
-
-#cart li {
-  padding: 6px 0;
-  border-bottom: 1px solid #ffd6e8;
-}
-
-#total {
-  font-weight: bold;
-}
-
 .price {
-  color: #e60073;
+  color: green;
   font-weight: bold;
 }
 
 .badge {
-  background: #ff0066;
+  display: block;
+  background: red;
   color: white;
-  padding: 4px 8px;
-  border-radius: 12px;
   font-size: 12px;
-  display: inline-block;
-  margin-top: 6px;
-}
-
-del {
-  color: #999;
+  border-radius: 10px;
+  margin-top: 5px;
 }
 
 footer {
-  background: #333;
+  background: #111;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
 }
