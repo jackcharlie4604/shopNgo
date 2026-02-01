@@ -1,33 +1,43 @@
-const foodByCity = {
-  Delhi: ["Chole Bhature", "Momos", "Butter Chicken"],
-  Mumbai: ["Vada Pav", "Pav Bhaji", "Bhel Puri"],
-  Hyderabad: ["Biryani", "Haleem", "Kebab"],
-  Bangalore: ["Dosa", "Idli", "Filter Coffee"]
-};
+// Cart array
+let cartItems = [];
 
-function loadFood() {
-  const city = document.getElementById("city").value;
-  const foodList = document.getElementById("foodList");
+// Add item to cart
+function addToCart(item) {
+  cartItems.push(item);
+  updateCart();
+}
 
-  if (!city) {
-    foodList.innerHTML = "<p>Select a location to see food</p>";
+// Update cart UI
+function updateCart() {
+  const cartList = document.getElementById("cart");
+  cartList.innerHTML = "";
+
+  if (cartItems.length === 0) {
+    cartList.innerHTML = "<li>Cart is empty</li>";
     return;
   }
 
-  foodList.innerHTML = "";
-  foodByCity[city].forEach(food => {
-    foodList.innerHTML += `<div class="card">🍴 ${food}</div>`;
+  cartItems.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    cartList.appendChild(li);
   });
 }
 
-function getLocation() {
-  if (!navigator.geolocation) {
-    alert("Geolocation not supported");
+// Checkout (demo)
+function checkout() {
+  if (cartItems.length === 0) {
+    alert("Your cart is empty!");
     return;
   }
 
-  navigator.geolocation.getCurrentPosition(
-    () => alert("Location detected! Select city manually for now."),
-    () => alert("Location permission denied")
+  alert(
+    "🙏 Thank you for choosing us!\n\n" +
+    "This website is for demo purposes only.\n" +
+    "We will notify you when we go live."
   );
+
+  document.getElementById("feedbackSection").style.display = "block";
+  cartItems = [];
+  updateCart();
 }
