@@ -1,5 +1,6 @@
 let cart = [];
-let prices = {
+
+const prices = {
   Pizza: 299,
   Burger: 199,
   Biryani: 349,
@@ -18,8 +19,6 @@ function addToCart(item) {
 function renderCart() {
   const cartList = document.getElementById("cart");
   const totalBox = document.getElementById("total");
-
-  if (!cartList || !totalBox) return;
 
   cartList.innerHTML = "";
   let total = 0;
