@@ -19,6 +19,8 @@ function renderCart() {
   const cartList = document.getElementById("cart");
   const totalBox = document.getElementById("total");
 
+  if (!cartList || !totalBox) return;
+
   cartList.innerHTML = "";
   let total = 0;
 
@@ -33,6 +35,11 @@ function renderCart() {
 }
 
 function checkout() {
+  if (cart.length === 0) {
+    alert("Your cart is empty");
+    return;
+  }
+
   alert(
     "🙏 Thank you for choosing us!\n\n" +
     "This website is for demo purposes only.\n" +
