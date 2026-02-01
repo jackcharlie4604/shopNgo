@@ -24,22 +24,46 @@
 </header>
 
 <main>
-  <section>
-    <h2>🍽️ Popular Food Near You</h2>
-    <div id="foodList" class="grid">
-      <p>Select a location to see food</p>
-    </div>
-  </section>
 
-  <section>
-    <h2>🛒 Popular Products</h2>
-    <div class="grid">
-      <div class="card">📱 Smartphone<br><span>₹15,999</span></div>
-      <div class="card">💻 Laptop<br><span>₹55,000</span></div>
-      <div class="card">👕 Clothing<br><span>₹999</span></div>
-      <div class="card">🎧 Headphones<br><span>₹2,499</span></div>
-    </div>
-  </section>
+<section>
+  <h2>🔐 Login</h2>
+  <input placeholder="Email">
+  <input type="password" placeholder="Password">
+  <button onclick="alert('Demo login successful')">Login</button>
+</section>
+
+<section>
+  <h2>🍽️ Restaurants Near You</h2>
+  <div class="grid">
+    <div class="card">🍕 Pizza Palace ⭐4.3<br><button onclick="addToCart('Pizza')">Order</button></div>
+    <div class="card">🍔 Burger Hub ⭐4.1<br><button onclick="addToCart('Burger')">Order</button></div>
+    <div class="card">🍗 Biryani House ⭐4.6<br><button onclick="addToCart('Biryani')">Order</button></div>
+    <div class="card">🥗 Green Bowl ⭐4.0<br><button onclick="addToCart('Salad')">Order</button></div>
+  </div>
+</section>
+
+<section>
+  <h2>🛒 Products</h2>
+  <div class="grid">
+    <div class="card">📱 Smartphone ₹15,999<br><button onclick="addToCart('Smartphone')">Buy</button></div>
+    <div class="card">💻 Laptop ₹55,000<br><button onclick="addToCart('Laptop')">Buy</button></div>
+    <div class="card">🎧 Headphones ₹2,499<br><button onclick="addToCart('Headphones')">Buy</button></div>
+    <div class="card">👕 Clothing ₹999<br><button onclick="addToCart('Clothing')">Buy</button></div>
+  </div>
+</section>
+
+<section>
+  <h2>🧺 Cart</h2>
+  <ul id="cart"></ul>
+  <button onclick="checkout()">Proceed to Payment</button>
+</section>
+
+<section id="feedbackSection" style="display:none">
+  <h2>💬 Feedback</h2>
+  <textarea placeholder="Please write your feedback here..."></textarea><br><br>
+  <button onclick="alert('Thank you for your feedback!')">Submit Feedback</button>
+</section>
+
 </main>
 
 <footer>
