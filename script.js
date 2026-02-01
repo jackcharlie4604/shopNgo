@@ -1,51 +1,48 @@
-let cart = [];
+let foodCart = [];
+let shopCart = [];
 
-const prices = {
-  Pizza: 299,
-  Burger: 199,
-  Biryani: 349,
-  Salad: 249,
-  Smartphone: 1599,
-  Laptop: 5500,
-  Headphones: 249,
-  Clothing: 99
-};
-
-function addToCart(item) {
-  cart.push(item);
-  renderCart();
+function showFood(){
+  document.getElementById("foodSection").style.display="block";
+  document.getElementById("shopSection").style.display="none";
 }
 
-function renderCart() {
-  const cartList = document.getElementById("cart");
-  const totalBox = document.getElementById("total");
-
-  cartList.innerHTML = "";
-  let total = 0;
-
-  cart.forEach(item => {
-    const li = document.createElement("li");
-    li.innerText = `${item} - ₹${prices[item]}`;
-    cartList.appendChild(li);
-    total += prices[item];
-  });
-
-  totalBox.innerText = "Total: ₹" + total;
+function showShop(){
+  document.getElementById("foodSection").style.display="none";
+  document.getElementById("shopSection").style.display="block";
 }
 
-function checkout() {
-  if (cart.length === 0) {
-    alert("Your cart is empty");
-    return;
-  }
-
-  alert(
-    "🙏 Thank you for choosing us!\n\n" +
-    "This website is for demo purposes only.\n" +
-    "We will notify you when we go live."
-  );
-
-  document.getElementById("feedbackSection").style.display = "block";
-  cart = [];
-  renderCart();
+function addFood(item,price){
+  foodCart.push(price);
+  document.getElementById("foodCart").innerHTML += `<li>${item} - ₹${price}</li>`;
+  updateFoodTotal();
 }
+
+function addShop(item,price){
+  shopCart.push(price);
+  document.getElementById("shopCart").innerHTML += `<li>${item} - ₹${price}</li>`;
+  updateShopTotal();
+}
+
+function updateFoodTotal(){
+  let total = foodCart.reduce((a,b)=>a+b,0);
+  document.getElementById("foodTotal").innerText = "Total: ₹"+total;
+}
+
+function updateShopTotal(){
+  let total = shopCart.reduce((a,b)=>a+b,0);
+  document.getElementById("shopTotal").innerText = "Total: ₹"+total;
+}
+
+function checkout(){
+  alert("Thank you for choosing us. This is a demo website but we will be live soon. We will notify you.");
+  document.getElementById("feedback").style.display="block";
+}
+
+function submitFeedback(){
+  alert("Thank you for your feedback!");
+}
+
+/* Visitor tracking (demo) */
+let visits = JSON.parse(localStorage.getItem("visits") || "[]");
+visits.push({time:new Date().toString()});
+localStorage.setItem("visits",JSON.stringify(visits));
