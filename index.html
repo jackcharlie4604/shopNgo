@@ -8,14 +8,14 @@
 
 <body>
 
-<!-- TOP NOTIFICATION -->
+<!-- TOP NOTICE -->
 <div class="top-note">
-  🚚 Cash on Delivery Available | Easy Returns | Trusted Demo Platform
+  🚚 Cash on Delivery Available | Easy Returns
 </div>
 
 <!-- HEADER -->
 <header class="header">
-  <div class="logo">🛒🍔 <span>ShopNgo</span></div>
+  <div class="logo">🛒🍔 ShopNgo</div>
 
   <div class="switch">
     <button onclick="showFood()">🍔 Food</button>
@@ -30,63 +30,19 @@
   <h2>🍽 Food Delivery</h2>
 
   <div class="grid">
-    <div class="card">🍕 Pizza<br>₹299<button onclick="addFood('Pizza',299)">Order</button></div>
-    <div class="card">🍔 Burger<br>₹199<button onclick="addFood('Burger',199)">Order</button></div>
-    <div class="card">🍗 Biryani<br>₹349<button onclick="addFood('Biryani',349)">Order</button></div>
-  </div>
-
-  <h3>🍔 Food Cart</h3>
-  <ul id="foodCart"></ul>
-  <p id="foodTotal">Total: ₹0</p>
-  <button onclick="checkout()">Proceed to Payment</button>
-</section>
-
-<!-- SHOPPING SECTION -->
-<section id="shopSection" class="box" style="display:none">
-  <h2>🛍 Shopping (🔥 90% OFF)</h2>
-
-  <div class="grid">
     <div class="card">
-      📱 Smartphone<br>
-      <del>₹15,999</del> <span class="price">₹1,599</span>
-      <span class="badge">90% OFF</span>
-      <button onclick="addShop('Smartphone',1599)">Buy</button>
+      🍕 Pizza<br>
+      ₹299<br>
+      <button onclick="addFood('Pizza',299)">Order</button>
     </div>
 
     <div class="card">
-      💻 Laptop<br>
-      <del>₹55,000</del> <span class="price">₹5,500</span>
-      <span class="badge">90% OFF</span>
-      <button onclick="addShop('Laptop',5500)">Buy</button>
+      🍔 Burger<br>
+      ₹199<br>
+      <button onclick="addFood('Burger',199)">Order</button>
     </div>
 
     <div class="card">
-      🎧 Headphones<br>
-      <del>₹2,499</del> <span class="price">₹249</span>
-      <span class="badge">90% OFF</span>
-      <button onclick="addShop('Headphones',249)">Buy</button>
-    </div>
-  </div>
-
-  <h3>🛒 Shopping Cart</h3>
-  <ul id="shopCart"></ul>
-  <p id="shopTotal">Total: ₹0</p>
-  <button onclick="checkout()">Proceed to Payment</button>
-</section>
-
-<!-- FEEDBACK -->
-<section id="feedback" class="box" style="display:none">
-  <h2>💬 Feedback</h2>
-  <textarea placeholder="Please write your feedback here..."></textarea>
-  <button onclick="submitFeedback()">Submit</button>
-</section>
-
-</main>
-
-<footer>
-  © 2026 ShopNgo | Demo Marketplace
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+      🍗 Biryani<br>
+      ₹349<br>
+      <button onclick="addFood('Biryani',3
