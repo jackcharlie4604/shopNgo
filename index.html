@@ -9,9 +9,7 @@
 <body>
 
 <header class="header">
-  <div class="logo">
-    💖 <span>ShopNgo</span>
-  </div>
+  <div class="logo">💖 <span>ShopNgo</span></div>
 
   <select>
     <option>Delhi</option>
@@ -27,7 +25,6 @@
 
 <main>
 
-<!-- LOGIN -->
 <section class="box">
   <h2>🔐 Login</h2>
   <input placeholder="Email">
@@ -35,7 +32,6 @@
   <button onclick="alert('Demo login successful')">Login</button>
 </section>
 
-<!-- RESTAURANTS -->
 <section class="box">
   <h2>🍽️ Restaurants Near You</h2>
   <div class="grid">
@@ -46,38 +42,11 @@
   </div>
 </section>
 
-<!-- PRODUCTS -->
 <section class="box">
-  <h2>🛒 Products</h2>
+  <h2>🛒 Products (🔥 90% OFF)</h2>
   <div class="grid">
-    <div class="card">📱 Smartphone ₹15,999<br><button onclick="addToCart('Smartphone')">Buy</button></div>
-    <div class="card">💻 Laptop ₹55,000<br><button onclick="addToCart('Laptop')">Buy</button></div>
-    <div class="card">🎧 Headphones ₹2,499<br><button onclick="addToCart('Headphones')">Buy</button></div>
-    <div class="card">👕 Clothing ₹999<br><button onclick="addToCart('Clothing')">Buy</button></div>
-  </div>
-</section>
 
-<!-- CART -->
-<section class="box cart-box">
-  <h2>🧺 Your Cart</h2>
-  <ul id="cart"></ul>
-  <p id="total">Total: ₹0</p>
-  <button onclick="checkout()">Proceed to Payment</button>
-</section>
-
-<!-- FEEDBACK -->
-<section id="feedbackSection" class="box" style="display:none">
-  <h2>💬 Feedback</h2>
-  <textarea placeholder="Please write your feedback here..." rows="4"></textarea><br><br>
-  <button onclick="alert('Thank you for your feedback!')">Submit Feedback</button>
-</section>
-
-</main>
-
-<footer>
-  © 2026 ShopNgo | Shop + Food Together
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+    <div class="card">
+      📱 Smartphone<br>
+      <del>₹15,999</del> <span class="price">₹1,599</span><br>
+      <span class="badge">9
