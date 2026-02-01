@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ShopNgo – Shop & Food</title>
+  <title>ShopNgo</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
   <h1>ShopNgo</h1>
 
-  <select id="city" onchange="loadFood()">
-    <option value="">📍 Select Location</option>
-    <option value="Delhi">Delhi</option>
-    <option value="Mumbai">Mumbai</option>
-    <option value="Hyderabad">Hyderabad</option>
-    <option value="Bangalore">Bangalore</option>
+  <select>
+    <option>Delhi</option>
+    <option>Mumbai</option>
+    <option>Hyderabad</option>
+    <option>Bangalore</option>
   </select>
 
-  <button onclick="getLocation()">Use My Location</button>
+  <button>Use My Location</button>
 
   <input type="text" placeholder="Search food or products">
 </header>
 
 <main>
 
+<!-- LOGIN -->
 <section>
   <h2>🔐 Login</h2>
   <input placeholder="Email">
@@ -32,6 +33,7 @@
   <button onclick="alert('Demo login successful')">Login</button>
 </section>
 
+<!-- RESTAURANTS -->
 <section>
   <h2>🍽️ Restaurants Near You</h2>
   <div class="grid">
@@ -42,53 +44,8 @@
   </div>
 </section>
 
+<!-- PRODUCTS -->
 <section>
   <h2>🛒 Products</h2>
   <div class="grid">
-
     <div class="card">
-      <img 
-  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop"
-  alt="Laptop">
-
-      <h3>Smartphone</h3>
-      <p class="offer">🔥 99% OFF</p>
-      <button onclick="addToCart('Smartphone')">Buy</button>
-    </div>
-
-    <div class="card">
-      <img 
-  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop"
-  alt="Laptop">
-  alt="Laptop">
-      <h3>Laptop</h3>
-      <p class="offer">🔥 99% OFF</p>
-      <button onclick="addToCart('Laptop')">Buy</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155223168f">
-      <h3>Headphones</h3>
-      <p class="offer">🔥 99% OFF</p>
-      <button onclick="addToCart('Headphones')">Buy</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47">
-      <h3>Clothing</h3>
-      <p class="offer">🔥 99% OFF</p>
-      <button onclick="addToCart('Clothing')">Buy</button>
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 ShopNgo | Shop + Food Together</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
