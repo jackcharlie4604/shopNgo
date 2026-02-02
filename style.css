@@ -96,3 +96,11 @@ section {
 h1, h2 {
   letter-spacing: 0.4px;
 }
+footer {
+  background: #0a1a44;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  margin-top: 40px;
+  font-size: 14px;
+}
