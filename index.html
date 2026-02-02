@@ -8,41 +8,26 @@
 
 <body>
 
-<!-- TOP NOTICE -->
-<div class="top-note">
-  🚚 Cash on Delivery Available | Easy Returns
-</div>
-
-<!-- HEADER -->
-<header class="header">
-  <div class="logo">🛒🍔 ShopNgo</div>
-
-  <div class="switch">
-    <button onclick="showFood()">🍔 Food</button>
-    <button onclick="showShop()">🛍 Shopping</button>
-  </div>
+<header>
+  <h1>🛒🍔 ShopNgo</h1>
+  <p>Shop & Food Together</p>
 </header>
 
 <main>
 
-<!-- FOOD SECTION -->
-<section id="foodSection" class="box">
-  <h2>🍽 Food Delivery</h2>
+<h2>🍽 Food Items</h2>
+<button onclick="addToCart('Pizza')">Order Pizza</button>
+<button onclick="addToCart('Burger')">Order Burger</button>
 
-  <div class="grid">
-    <div class="card">
-      🍕 Pizza<br>
-      ₹299<br>
-      <button onclick="addFood('Pizza',299)">Order</button>
-    </div>
+<h2>🛍 Shopping Items</h2>
+<button onclick="addToCart('Smartphone')">Buy Smartphone</button>
+<button onclick="addToCart('Headphones')">Buy Headphones</button>
 
-    <div class="card">
-      🍔 Burger<br>
-      ₹199<br>
-      <button onclick="addFood('Burger',199)">Order</button>
-    </div>
+<h2>🧺 Cart</h2>
+<ul id="cart"></ul>
 
-    <div class="card">
-      🍗 Biryani<br>
-      ₹349<br>
-      <button onclick="addFood('Biryani',3
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

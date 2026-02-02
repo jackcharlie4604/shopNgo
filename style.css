@@ -1,92 +1,22 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #fde6f2;
-}
-
-.top-note {
-  background: #0057ff;
-  color: white;
-  text-align: center;
-  padding: 8px;
-  font-size: 14px;
-}
-
-.header {
-  background: linear-gradient(90deg,#0066ff,#ff4da6);
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.switch button {
-  background: white;
-  border: none;
-  padding: 8px 14px;
-  margin-left: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-main {
+  background: linear-gradient(120deg, #ffb3d9, #99ccff);
   padding: 20px;
 }
 
-.box {
-  background: white;
-  padding: 20px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-  gap: 16px;
-}
-
-.card {
-  background: #fff0f7;
+header {
+  background: #0066ff;
+  color: white;
   padding: 15px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-button {
-  margin-top: 10px;
-  background: #ff4da6;
-  color: white;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.price {
-  color: green;
-  font-weight: bold;
-}
-
-.badge {
-  display: inline-block;
-  background: red;
-  color: white;
-  font-size: 12px;
-  padding: 3px 8px;
   border-radius: 10px;
 }
 
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
+button {
+  margin: 5px;
   padding: 10px;
+  border: none;
+  background: #ff4da6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
