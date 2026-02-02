@@ -64,3 +64,35 @@ textarea {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+/* ---- Phase 4 Polish ---- */
+
+header {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 6px;
+  background: linear-gradient(90deg,#ff1744,#ff6f91);
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  letter-spacing: 0.4px;
+}
