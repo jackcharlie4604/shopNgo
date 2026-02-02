@@ -132,26 +132,28 @@ button {
   font-size: 13px;
 }
 /* Toast notification */
-.toast {
+..toast {
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-  background: #323232;
-  color: #fff;
+  background: #1f2937;
+  color: #ffffff;
   padding: 12px 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   opacity: 0;
   pointer-events: none;
-  transform: translateY(20px);
+  transform: translateY(-10px);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .toast.show {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Login box */
 .login-box {
   background: #ffffff;

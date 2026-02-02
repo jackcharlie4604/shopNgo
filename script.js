@@ -3,6 +3,7 @@ let cart = [];
 function addToCart(item) {
   cart.push(item);
   renderCart();
+  showToast(item + " added to cart");
 }
 
 function renderCart() {
