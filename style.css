@@ -104,3 +104,30 @@ footer {
   margin-top: 40px;
   font-size: 14px;
 }
+/* Smaller cards like Flipkart / Zomato */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 13px;
+}
