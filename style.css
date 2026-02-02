@@ -131,3 +131,57 @@ button {
   padding: 6px 10px;
   font-size: 13px;
 }
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #323232;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Login box */
+.login-box {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  max-width: 320px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+/* Feedback box */
+.feedback-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.feedback-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}

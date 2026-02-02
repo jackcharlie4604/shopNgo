@@ -29,3 +29,23 @@ function checkout() {
 function submitFeedback() {
   alert("Thank you for your feedback!");
 }
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2000);
+}
+function addToCart(item) {
+  cart.push(item);
+  renderCart();
+  showToast(item + " added to cart");
+}
+function loginUser() {
+  showToast("Login successful (demo)");
+}
+function submitFeedback() {
+  showToast("Thank you for your feedback!");
+}
