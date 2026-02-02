@@ -15,3 +15,17 @@ function renderCart() {
     cartList.appendChild(li);
   });
 }
+
+function checkout() {
+  alert(
+    "Thank you for choosing us.\n\n" +
+    "This is a demo website.\n" +
+    "We will be live soon and notify you."
+  );
+
+  document.getElementById("feedbackSection").style.display = "block";
+}
+
+function submitFeedback() {
+  alert("Thank you for your feedback!");
+}
